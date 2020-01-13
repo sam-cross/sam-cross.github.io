@@ -12,12 +12,13 @@ import Uses from './pages/Uses.js';
 function App() {
 	return (
 		<div className="App">
-			<Router>
+			<Router basename="/">
 				<Header />
 				
 				<Switch>
 					<Route exact path="/"><Home /></Route> 
 					<Route path="/uses"><Uses /></Route>
+
 					<Route path="*"><Home /></Route>
 				</Switch>
 			</Router>

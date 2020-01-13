@@ -1,6 +1,10 @@
 import React from 'react';
+import setPageTitle from '../helpers/setPageTitle.js';
 
 class Home extends React.Component {
+    componentDidMount() {
+        setPageTitle(document, 'Home');
+    }
     render() {
         return (
             <div className="page page-Home">
